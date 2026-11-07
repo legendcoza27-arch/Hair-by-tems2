@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hair By Tems — Classic Braids in Lagos | +234 701 955 2110</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FDFBF7;
+  --ink:#121212;
+  --gold:#C2A46A;
+  --gold-dark:#8C734B;
+  --line:#EAE2D6;
+  --muted:#7A7671;
+  --green:#25D366;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Poppins',sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Playfair Display',serif; font-weight:600; letter-spacing:-0.02em;}
+img{width:100%; height:100%; object-fit:cover; display:block;}
+
+/* CLASSIC NAV */
+.nav{
+  position:fixed; top:0; width:100%;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:18px 5%;
+  background:rgba(253,251,247,0.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+  z-index:50;
+}
+.logo{letter-spacing:3px; font-weight:700; font-size:14px;}
+.logo span{color:var(--gold-dark);}
+.nav a.btn{
+  border:1px solid var(--ink);
+  padding:10px 22px; border-radius:100px;
+  font-size:12px; letter-spacing:1px; font-weight:500;
+  transition:0.3s; text-decoration:none; color:var(--ink);
+}
+.nav a.btn:hover{background:var(--ink); color:var(--paper);}
+
+/* HERO CLASSIC */
+.hero{
+  padding:130px 5% 70px;
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:60px; align-items:center;
+  border-bottom:1px solid var(--line);
+}
+.eyebrow{
+  font-size:11px; letter-spacing:3px; text-transform:uppercase;
+  color:var(--gold-dark); margin-bottom:18px;
+}
+.hero h1{font-size:62px; line-height:0.92; margin-bottom:20px;}
+.hero h1 em{font-style:italic; font-weight:500; color:var(--gold-dark);}
+.hero p{color:var(--muted); max-width:420px; font-size:14px; line-height:1.8; margin-bottom:28px;}
+.hero-actions{display:flex; gap:12px; align-items:center;}
+.btn-black{
+  background:var(--ink); color:var(--paper);
+  padding:14px 28px; border-radius:100px;
+  font-size:12px; letter-spacing:1px; text-decoration:none;
+  display:inline-block; border:1px solid var(--ink);
+}
+.btn-line{
+  padding:14px 28px; border-radius:100px;
+  font-size:12px; letter-spacing:1px; text-decoration:none;
+  border:1px solid var(--line); color:var(--ink);
+}
+.hero-frame{
+  height:580px; border:1px solid var(--line);
+  padding:12px; background:white;
+}
+.hero-frame div{height:100%; overflow:hidden;}
+
+/* WORK */
+.section{padding:90px 5%;}
+.section-head{text-align:center; margin-bottom:50px;}
+.section-head h2{font-size:44px; margin-bottom:10px;}
+.section-head p{color:var(--muted); font-size:13px; letter-spacing:0.5px;}
+.work-grid{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+}
+.work-card{
+  background:white; border:1px solid var(--line);
+  padding:12px; padding-bottom:18px;
+}
+.work-card .img{height:440px; overflow:hidden; margin-bottom:14px;}
+.work-card h4{font-family:'Playfair Display'; font-size:16px; text-align:center;}
+.work-card span{font-size:11px; color:var(--muted); text-align:center; display:block; letter-spacing:1px; margin-top:4px;}
+
+/* MENU CLASSIC */
+.menu{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+  background:var(--line); border:1px solid var(--line);
+}
+.menu-item{
+  background:white; padding:28px;
+  display:flex; gap:18px; align-items:center;
+}
+.menu-item .thumb{width:72px; height:72px; border-radius:50%; overflow:hidden; border:1px solid var(--line); flex-shrink:0;}
+.menu-item h3{font-size:16px;}
+.menu-item .price{font-family:'Playfair Display'; color:var(--gold-dark); font-size:16px; margin-top:4px;}
+.menu-item button{
+  margin-left:auto; background:none; border:none;
+  font-size:11px; letter-spacing:1px; text-transform:uppercase;
+  border-bottom:1px solid var(--ink); padding-bottom:3px; cursor:pointer;
+}
+
+/* BOOKING CLASSIC */
+.booking-wrap{
+  background:white; border:1px solid var(--line);
+  margin:0 5%; display:grid; grid-template-columns:0.9fr 1.1fr;
+}
+.booking-left{padding:50px; border-right:1px solid var(--line);}
+.booking-left h2{font-size:38px; line-height:1;}
+.booking-right{padding:50px;}
+label{font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); display:block; margin-bottom:8px; margin-top:18px;}
+input, select{
+  width:100%; padding:14px 0; border:none;
+  border-bottom:1px solid var(--line); background:transparent;
+  outline:none; font-family:'Poppins'; font-size:14px;
+}
+input:focus, select:focus{border-bottom-color:var(--ink);}
+.btn-submit{
+  width:100%; background:var(--ink); color:var(--paper);
+  border:none; padding:16px; margin-top:30px;
+  font-size:12px; letter-spacing:2px; text-transform:uppercase;
+  cursor:pointer;
+}
+.contact-box{
+  margin-top:30px; border:1px solid var(--line); padding:16px;
+  display:flex; gap:12px; align-items:center;
+}
+
+.float{
+  position:fixed; bottom:28px; right:28px;
+  background:var(--ink); color:var(--paper);
+  width:56px; height:56px; border-radius:50%;
+  display:grid; place-items:center; text-decoration:none;
+  font-size:13px; letter-spacing:1px; z-index:99;
+}
+
+@media(max-width:900px){
+  .hero, .work-grid, .menu, .booking-wrap{grid-template-columns:1fr;}
+  .hero h1{font-size:42px;}
+  .hero-frame{height:400px;}
+  .booking-wrap{margin:0;}
+  .booking-left{border-right:none; border-bottom:1px solid var(--line);}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">HAIR BY <span>TEMS</span></div>
+  <a href="#booking" class="btn">BOOK APPOINTMENT</a>
+</nav>
+
+<section class="hero">
+  <div>
+    <div class="eyebrow">Lagos • Home Service Available • +234 701 955 2110</div>
+    <h1>Classic, <br><em>Neat Braids</em><br>Made To Last.</h1>
+    <p>Real handwork from my chair. No filters. Just clean parting, painless braids, and styles that last weeks. See my actual work on the right.</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn-black">VIEW REAL WORK</a>
+      <a href="https://wa.me/2347019552110" target="_blank" class="btn-line">WHATSAPP: 0701 955 2110</a>
+    </div>
+  </div>
+  <div class="hero-frame">
+    <div><img src="1.jpg.jpg" alt="Hair by Tems work"></div>
+  </div>
+</section>
+
+<section id="work" class="section">
+  <div class="section-head">
+    <div class="eyebrow">Real Work</div>
+    <h2>Straight From My Chair</h2>
+    <p>What you see is what you get — my signature neatness.</p>
+  </div>
+  <div class="work-grid">
+    <div class="work-card">
+      <div class="img"><img src="1.jpg.jpg" alt="All back cornrow"></div>
+      <h4>All Back Cornrow / Shuku</h4>
+      <span>U-PATTERN • 2 HOURS</span>
+    </div>
+    <div class="work-card">
+      <div class="img"><img src="2.jpg.jpg" alt="Cornrow with beads"></div>
+      <h4>Cornrow With Beads</h4>
+      <span>KIDS & ADULTS • NEAT</span>
+    </div>
+    <div class="work-card">
+      <div class="img"><img src="3.jpg.jpg" alt="Stitch braids"></div>
+      <h4>Straight Back Stitch Braids</h4>
+      <span>6-10 STITCHES • CLEAN SCALP</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="section-head">
+    <div class="eyebrow">Price List</div>
+    <h2>Braid Menu</h2>
+  </div>
+  <div class="menu">
+    <div class="menu-item">
+      <div class="thumb"><img src="1.jpg.jgp"></div>
+      <div><h3>Shuku / All Back</h3><div class="price">₦7,000</div></div>
+      <button onclick="book('All Back Cornrow - ₦7,000')">Book</button>
+    </div>
+    <div class="menu-item">
+      <div class="thumb"><img src="2.jpg.jpg"></div>
+      <div><h3>Cornrow + Beads</h3><div class="price">₦6,000 - ₦8,000</div></div>
+      <button onclick="book('Cornrow with Beads')">Book</button>
+    </div>
+    <div class="menu-item">
+      <div class="thumb"><img src="3.jpg.jpg"></div>
+      <div><h3>Stitch Braids</h3><div class="price">₦7,000 - ₦10,000</div></div>
+      <button onclick="book('Stitch Braids - ₦8,000')">Book</button>
+    </div>
+    <div class="menu-item">
+      <div class="thumb"><img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?w=200"></div>
+      <div><h3>Knotless Braids</h3><div class="price">₦20,000</div></div>
+      <button onclick="book('Long Knotless - ₦20,000')">Book</button>
+    </div>
+    <div class="menu-item">
+      <div class="thumb"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200"></div>
+      <div><h3>Boho Braids</h3><div class="price">₦18,000</div></div>
+      <button onclick="book('Boho - ₦18,000')">Book</button>
+    </div>
+    <div class="menu-item">
+      <div class="thumb"><img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=200"></div>
+      <div><h3>French Curl</h3><div class="price">₦20,000</div></div>
+      <button onclick="book('French Curl - ₦20,000')">Book</button>
+    </div>
+  </div>
+</section>
+
+<section id="booking" class="section">
+  <div class="booking-wrap">
+    <div class="booking-left">
+      <div class="eyebrow">Booking</div>
+      <h2>Reserve<br>Your Seat</h2>
+      <p style="color:var(--muted); font-size:13px; margin-top:16px; line-height:1.7;">Chat directly on WhatsApp. I reply fast 8am - 10pm. Small deposit confirms your date.</p>
+      <div class="contact-box">
+        <div style="width:38px; height:38px; background:var(--ink); color:var(--paper); border-radius:50%; display:grid; place-items:center; font-size:12px;">W</div>
+        <div><strong style="font-size:12px; letter-spacing:1px;">WHATSAPP</strong><br><span style="font-size:12px; color:var(--muted);">+234 701 955 2110 • Online</span></div>
+      </div>
+    </div>
+    <div class="booking-right">
+      <label>Your Name *</label>
+      <input type="text" id="custName" placeholder="Blessing">
+      <label>Phone Number *</label>
+      <input type="tel" id="custPhone" placeholder="080...">
+      <label>Style</label>
+      <select id="custStyle">
+        <option>All Back Cornrow / Shuku - ₦7,000</option>
+        <option>Cornrow with Beads - ₦6,000</option>
+        <option>Straight Back Stitch Braids - ₦8,000</option>
+        <option>Long Knotless - ₦20,000</option>
+        <option>Boho Braids - ₦18,000</option>
+      </select>
+      <label>Preferred Date</label>
+      <input type="date" id="custDate">
+      <button class="btn-submit" onclick="sendToWhatsApp()">Book on WhatsApp →</button>
+    </div>
+  </div>
+</section>
+
+<footer style="text-align:center; padding:50px 5%; border-top:1px solid var(--line); color:var(--muted); font-size:11px; letter-spacing:2px;">
+  HAIR BY TEMS — LAGOS — +234 701 955 2110<br><br>© 2026
+</footer>
+
+<a href="https://wa.me/2347019552110" target="_blank" class="float">WA</a>
+
+<script>
+const STORE_WHATSAPP = "2347019552110";
+document.getElementById('custDate').min = new Date().toISOString().split('T')[0];
+
+function book(style){
+  document.getElementById('custStyle').value = style;
+  document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+}
+
+function sendToWhatsApp(){
+  const name = document.getElementById('custName').value.trim();
+  const phone = document.getElementById('custPhone').value.trim();
+  const style = document.getElementById('custStyle').value;
+  const date = document.getElementById('custDate').value || "ASAP";
+  if(!name){ alert("Enter your name"); return; }
+  if(phone.length < 10){ alert("Enter valid phone"); return; }
+  const msg = `Hello Hair By Tems!%0A%0A*NEW BOOKING*%0AName: ${name}%0APhone: ${phone}%0AStyle: ${style}%0ADate: ${date}`;
+  window.open(`https://wa.me/${STORE_WHATSAPP}?text=${msg}`, '_blank');
+}
+</script>
+
+</body>
+</html>
